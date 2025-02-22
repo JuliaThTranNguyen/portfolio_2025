@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  /*..........................................................................*/
+  /*This is a CSS  module for paginator component - a common pattern used in this app*/
+  .pagination-container {
+    @apply flex justify-center items-center gap-2 mt-5 font-extrabold;
+  }
+
+  .pagination-button,
+  .pagination-number {
+    @apply bg-gray-500 px-3 py-2 rounded-md text-base cursor-pointer transition;
+  }
+
+  .pagination-button:hover,
+  .pagination-number:hover {
+    @apply bg-gray-600;
+  }
+
+  .pagination-number.active {
+    @apply bg-blue-500 text-white font-semibold;
+  }
+}

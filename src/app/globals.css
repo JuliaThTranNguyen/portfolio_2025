@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import all the other CSS files */
+@import "./styles/layout.css";
+@import "./styles/buttons.css";
+@import "./styles/hero.css";
+@import "./styles/advancedProjects.css";
+@import "./styles/cvtree.css";
+@import "./styles/pagination.css";
+@import "./styles/testimonials.css";
+@import "./styles/about.css";
+@import "./styles/contact.css";
+
+/*.................................................................................*/
+/* This is a CSS  module for the entire body of this app */
+body {
+  @apply overflow-x-hidden;
+}
+/* Increase text size for screens 800px and larger */
+@media (min-width: 800px) {
+  body {
+    @apply text-lg;
+  }
+
+  .projects-header h2,
+  .hero-heading {
+    @apply text-5xl;
+  }
+
+  .projects-header p,
+  .hero-bio,
+  .project-card-content p,
+  .project-card-result {
+    @apply text-xl;
+  }
+}
+
+/*.................................................................................*/

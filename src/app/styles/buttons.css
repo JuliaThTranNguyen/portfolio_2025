@@ -1,0 +1,34 @@
+@tailwind components;
+
+@layer components {
+  /*..........................................................................*
+  /* Base styles for all buttons */
+  .button-base {
+    @apply my-2 font-serif font-bold inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-white transition;
+  }
+
+  /* Primary button (Blue) */
+  .button-primary {
+    @apply bg-blue-600 hover:bg-cyan-600;
+  }
+
+  /* Success button (Green) */
+  .button-success {
+    @apply bg-green-600 hover:bg-purple-600;
+  }
+
+  /* Circle-style button */
+  .button-circle {
+    @apply p-3 bg-gray-600 rounded-full text-sm text-white/90 font-extrabold;
+  }
+
+  .button-circle:hover {
+    @apply bg-gray-800 text-white border-4 border-dashed border-white;
+  }
+
+  @media (min-width: 1024px) {
+    .button-base {
+      @apply text-xl;
+    }
+  }
+}

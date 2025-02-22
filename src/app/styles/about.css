@@ -1,0 +1,57 @@
+@tailwind components;
+
+@layer components {
+  /*..........................................................................*/
+  /* This is a CSS module for about section */
+
+  /* About Section - Flex layout */
+  .about-section {
+    @apply flex flex-col space-y-10 pt-20 bg-gradient-to-br from-gray-900 via-indigo-800 to-white/60;
+  }
+
+  /* Top Container (Banner) */
+  .about-head-banner {
+    @apply text-white text-center rounded-xl shadow-lg;
+  }
+
+  .about-head-banner h2 {
+    @apply text-4xl font-bold;
+  }
+
+  /* Bottom Container (Content) */
+  .about-bottom-container {
+    @apply flex flex-wrap md:flex-nowrap w-full justify-between p-4;
+  }
+
+  .about-map-container {
+    @apply w-full md:w-1/2 p-4;
+  }
+
+  .about-map-container img {
+    @apply w-full h-full object-cover rounded-xl shadow-lg transition-transform transform hover:scale-105;
+  }
+
+  .location-text {
+    @apply text-center mt-4 text-gray-300 text-sm;
+  }
+
+  .about-info-container {
+    @apply w-full md:w-1/2 p-6 flex flex-col justify-between bg-white rounded-3xl shadow-2xl overflow-hidden;
+  }
+
+  .personal-info {
+    @apply space-y-4 text-gray-800;
+  }
+
+  .personal-info-text {
+    @apply text-lg italic text-gray-700;
+  }
+
+  .personal-info-name {
+    @apply font-semibold text-3xl text-blue-600;
+  }
+
+  .personal-info-prefer {
+    @apply italic text-xl text-gray-500;
+  }
+}

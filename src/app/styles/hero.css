@@ -1,0 +1,65 @@
+@tailwind components;
+
+@layer components {
+  /*.............................................................................................*/
+  /* This is a CSS  module for hero section */
+  .hero-container {
+    @apply flex flex-col items-center justify-center min-h-screen text-white overflow-visible relative;
+  }
+
+  .hero-inner-container {
+    @apply pt-20 flex flex-col items-center max-w-2xl mx-auto px-4;
+  }
+
+  .twinkling-stars::before,
+  .twinkling-stars::after {
+    content: "";
+    position: absolute;
+    color: blueviolet;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 2px, transparent 3px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    background-image: radial-gradient(blueviolet 2px, transparent 3px);
+    animation: twinkle 2s infinite alternate ease-in-out;
+  }
+
+  .twinkling-stars::before {
+    background-image: radial-gradient(blueviolet 2px, transparent 3px),
+      radial-gradient(gold 2px, transparent 3px),
+      radial-gradient(cyan 2px, transparent 3px);
+    background-size: 50px 50px, 80px 80px, 100px 100px;
+  }
+
+  .twinkling-stars::after {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes twinkle {
+    0% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+  }
+
+  .hero-main-status {
+    @apply bg-gray-800 border-gray-700 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg;
+  }
+
+  .hero-heading {
+    @apply font-serif text-4xl text-center mt-8;
+  }
+
+  .hero-bio {
+    @apply mt-4 text-center text-white/60;
+  }
+
+  .hero-footer {
+    @apply flex flex-col items-center mt-8 gap-4 overflow-visible;
+  }
+}

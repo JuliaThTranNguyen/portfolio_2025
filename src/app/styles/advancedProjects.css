@@ -1,0 +1,154 @@
+@tailwind components;
+
+@layer components {
+  /*..........................................................................*/
+  /*This is a CSS  module for projects section */
+
+  .projects-section {
+    @apply w-full max-w-full px-10 py-36 mt-8 flex flex-col items-center text-center bg-gradient-to-r from-gray-800 via-purple-900 to-blue-950;
+  }
+
+  .projects-header {
+    @apply text-center mb-32 relative;
+  }
+
+  .projects-head-title {
+    @apply text-5xl font-extrabold text-transparent bg-gradient-to-r from-blue-600 via-yellow-500 to-red-600 
+      bg-clip-text uppercase tracking-wide;
+    background-size: 500% 100%;
+    animation: gradientEffect 5s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+      0 0 20px rgba(255, 255, 255, 0.7);
+  }
+
+  @keyframes gradientEffect {
+    0% {
+      background-position: 100% 0;
+    }
+    25% {
+      background-position: 110% 0; /* Shift the gradient a bit */
+    }
+    50% {
+      background-position: 120% 0; /* Shift more */
+    }
+    75% {
+      background-position: 110% 0; /* Move back */
+    }
+    100% {
+      background-position: 100% 0; /* Original position */
+    }
+  }
+
+  .projects-header h2 {
+    @apply text-4xl font-extrabold text-white mb-3 tracking-wide;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+  }
+
+  .projects-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #ec4899);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: underline-slide 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes underline-slide {
+    0% {
+      width: 90%;
+    }
+    100% {
+      width: 120%;
+    }
+  }
+
+  .projects-header p {
+    @apply my-4 text-lg text-white/70 italic max-w-lg mx-auto;
+    line-height: 1.6;
+  }
+
+  .project-card {
+    @apply py-10 mb-10 bg-gray-950 border border-gray-700 p-6 rounded-2xl shadow-lg;
+  }
+
+  .project-card:hover {
+    @apply border-2 border-blue-500 shadow-xl scale-[1.02];
+  }
+
+  /* Default styles for small devices (Mobile) */
+  @media (max-width: 959px) {
+    .project-card-image {
+      @apply relative w-[60%] h-[70%] max-w-full mx-auto rounded-lg overflow-hidden items-center justify-center;
+    }
+
+    .project-card-image img {
+      @apply object-cover w-[100%] h-[90%];
+    }
+
+    .project-button-spacing {
+      @apply space-x-2;
+    }
+  }
+
+  /* Styles for medium screens (Tablet, etc.) */
+  @media (min-width: 960px) {
+    .projects-section {
+      @apply w-full max-w-full px-32 py-20 flex flex-col items-center text-center;
+    }
+
+    .project-card {
+      @apply flex flex-row items-center gap-8 text-left;
+    }
+
+    .project-card-content {
+      @apply w-[52%];
+    }
+
+    .project-card-image {
+      @apply w-[50%] flex justify-center items-center;
+    }
+
+    .project-card-image img {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-button-spacing {
+      @apply space-x-0;
+    }
+  }
+
+  /* Adjust button spacing for medium screens (Tablet, etc.) */
+  @media (min-width: 972px) {
+    .project-button-spacing {
+      @apply flex flex-row justify-start items-center space-x-2;
+    }
+  }
+
+  .project-card-content {
+    @apply mt-4 text-white;
+  }
+
+  .project-card-content h3 {
+    @apply text-xl font-semibold;
+  }
+
+  .project-card-content p {
+    @apply text-white/60;
+  }
+
+  .project-card-results {
+    @apply mt-10 mb-2;
+  }
+
+  .project-card-result {
+    @apply text-sm text-white/50;
+  }
+}

@@ -1,0 +1,111 @@
+@tailwind components;
+
+@layer components {
+  /*..........................................................................*/
+  /* This is a CSS module for the Contact Section */
+  .contact-section {
+    @apply flex flex-col items-center py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-700;
+  }
+
+  .contact-banner {
+    @apply text-center mb-10;
+  }
+
+  .contact-banner h2 {
+    @apply text-3xl font-bold text-white;
+  }
+
+  .contact-banner p {
+    @apply text-lg mt-2 text-gray-500;
+  }
+
+  .contact-bottom-container {
+    @apply flex flex-wrap md:flex-nowrap w-full justify-between p-4;
+  }
+
+  /* Contact Form Box */
+  .contact-form {
+    @apply p-8 bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition duration-300;
+  }
+
+  /* Input and Textarea Styles */
+  .contact-form label {
+    @apply block mb-2 text-lg font-medium text-white;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    @apply w-full p-3 border border-gray-500 rounded-lg bg-white text-black font-bold focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .contact-form button {
+    @apply w-full py-3 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300;
+  }
+
+  .contact-form button:disabled {
+    @apply bg-gray-400 cursor-not-allowed;
+  }
+
+  /* Contact Info Section */
+  .contact-info {
+    @apply space-y-8 max-w-xl w-full;
+  }
+
+  /* Direct Contact Box */
+  .direct-contact {
+    @apply p-6 bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition duration-300;
+  }
+
+  .direct-contact h3 {
+    @apply text-xl mb-4 font-semibold text-white;
+  }
+
+  .direct-contact p {
+    @apply text-lg text-gray-300;
+  }
+
+  /* Social Media Links Box */
+  .social-links {
+    @apply p-6 bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition duration-300;
+  }
+
+  .social-links h3 {
+    @apply text-xl mb-4 font-semibold text-white;
+  }
+
+  .social-links a {
+    @apply text-blue-400 hover:text-blue-500 transition duration-200;
+  }
+
+  .social-links p {
+    @apply text-lg text-gray-300;
+  }
+
+  /* Call-to-Action (CTA) Box */
+  .cta {
+    @apply p-6 bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition duration-300;
+  }
+
+  .cta h3 {
+    @apply text-xl mb-4 font-semibold text-white;
+  }
+
+  .cta p {
+    @apply text-lg text-gray-300;
+  }
+
+  /* Hover Effects */
+  .contact-form:hover,
+  .direct-contact:hover,
+  .social-links:hover,
+  .cta:hover {
+    @apply transform scale-105 shadow-xl transition-all duration-300;
+  }
+
+  /* Responsive Design: Contact Section */
+  @media (max-width: 1024px) {
+    .contact-section {
+      @apply px-4 py-10;
+    }
+  }
+}
