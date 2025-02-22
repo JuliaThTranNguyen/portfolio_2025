@@ -17,7 +17,7 @@ export const AdvancedProjectsSection = () => {
   }, [currentPage, itemsPerPage]);
 
   return (
-    <div id="projects" className="projects-section button-text-effect ">
+    <div id="projects" className="projects-section button-text-effect">
       <div className="projects-header">
         <p className="projects-head-title">LIVE DEMO OF MY AWESOME PROJECTS</p>
         <h2>Featured Projects</h2>
@@ -28,49 +28,71 @@ export const AdvancedProjectsSection = () => {
         {currentProjects.map((project) => (
           <div key={project.title} className="project-card">
             <div className="project-card-image">
-              <Image src={project.image} alt={project.title} />
+              <Image
+                src={project.image}
+                alt={project.title}
+                className="rounded-lg shadow-lg"
+              />
             </div>
+
             <div className="project-card-content">
-              <h3>{project.title}</h3>
-              <p>{project.company}</p>
-              <p>{project.year}</p>
+              <h3 className="font-bold text-xl">{project.title}</h3>
+              <p className="text-gray-400">
+                {project.company} | {project.year}
+              </p>
+
               <div className="project-card-results">
-                {project.results.map((result) => (
-                  <div key={result.title} className="project-card-result">
-                    <p>{result.title}</p>
-                  </div>
+                <h4 className="font-semibold">Key Achievements:</h4>
+                {project.results.map((result, index) => (
+                  <p key={index} className="text-sm">
+                    {result}
+                  </p>
                 ))}
               </div>
 
               <div className="project-card-results">
-                {project.techs.map((techs) => (
-                  <div key={techs.title} className="project-card-result">
-                    <p>{techs.title}</p>
-                  </div>
+                <h4 className="font-semibold">Tech Stack:</h4>
+                {project.techs.map((tech, index) => (
+                  <p key={index} className="text-sm">
+                    {tech}
+                  </p>
                 ))}
               </div>
 
               <div className="project-card-results">
-                {project.mains.map((mains) => (
-                  <div key={mains.title} className="project-card-result">
-                    <p>{mains.title}</p>
-                  </div>
+                <h4 className="font-semibold">Deployment:</h4>
+                {project.mains.map((main, index) => (
+                  <p key={index} className="text-sm">
+                    {main}
+                  </p>
                 ))}
               </div>
 
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="project-button-spacing"
-              >
-                <button className="button-base button-primary">
-                  <span className="font-semibold">View Project 🔍</span>
-                </button>
-                <button className="button-base button-success">
-                  <span className="font-semibold">View Source Code 💡</span>
-                </button>
-              </a>
+              <div className="project-button-spacing">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-base button-primary"
+                >
+                  <button>
+                    <span className="font-semibold">View Project 🔍</span>
+                  </button>
+                </a>
+
+            
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button-base button-success"
+                  >
+                    <button>
+                      <span className="font-semibold">View Source Code 💡</span>
+                    </button>
+                  </a>
+              
+              </div>
             </div>
           </div>
         ))}

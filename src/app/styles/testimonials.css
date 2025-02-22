@@ -4,7 +4,7 @@
   /*..........................................................................*/
   /*This is a CSS  module for testimonials section */
   .testimonials-section {
-    @apply flex flex-col items-center text-center py-12 px-6 font-serif;
+    @apply flex flex-col items-center text-center py-12 px-6 font-serif ;
   }
 
   .testimonials-title {
