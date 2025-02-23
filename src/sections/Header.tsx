@@ -8,6 +8,7 @@ export const Header = () => {
   const scrollToTestimonial = useScrollToSection("testimonial");
   const scrollToAbout = useScrollToSection("about");
   const scrollToContact = useScrollToSection("contact");
+  const scrollToCertificates = useScrollToSection("certificates");
 
   return (
     <div className="header-section">
@@ -20,6 +21,9 @@ export const Header = () => {
         </button>
         <button onClick={scrollToEdu} className="header-navbar-item">
           Work & Education
+        </button>
+        <button onClick={scrollToCertificates} className="header-navbar-item">
+          Certificates
         </button>
         <button onClick={scrollToTestimonial} className="header-navbar-item">
         Testimonial

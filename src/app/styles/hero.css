@@ -21,7 +21,7 @@
     background-image: radial-gradient(white 2px, transparent 3px);
     background-size: 50px 50px;
     opacity: 0.3;
-    background-image: radial-gradient(blueviolet 2px, transparent 3px);
+    background-image: radial-gradient(pink 2px, transparent 3px);
     animation: twinkle 2s infinite alternate ease-in-out;
   }
 
@@ -52,11 +52,11 @@
   }
 
   .hero-heading {
-    @apply font-serif text-4xl text-center mt-8;
+    @apply font-serif text-9xl text-center mt-8 mb-2;
   }
 
   .hero-bio {
-    @apply mt-4 text-center text-white/60;
+    @apply mt-4 text-center text-white/90 font-serif;
   }
 
   .hero-footer {

@@ -17,7 +17,7 @@ const deploymentInfo = ["Deployed on Vercel", "Code maintained on GitHub"];
 const advancedProjects = [
   {
     company: "Personal Project",
-    year: "2022",
+    year: "2025",
     title: "Web Portfolio 2025",
     results: [
       "Enhanced user experience by 25%",

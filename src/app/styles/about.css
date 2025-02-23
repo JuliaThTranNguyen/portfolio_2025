@@ -6,7 +6,7 @@
 
   /* About Section - Flex layout */
   .about-section {
-    @apply flex flex-col space-y-10 pt-20 bg-gradient-to-br from-white/40 via-gray-800 to-white/40;
+    @apply flex flex-col space-y-10;
   }
 
   /* Top Container (Banner) */
@@ -32,7 +32,7 @@
   }
 
   .location-text {
-    @apply text-center mt-4 text-gray-400 text-sm;
+    @apply text-center mt-4 text-gray-500 text-sm;
   }
 
   .about-info-container {

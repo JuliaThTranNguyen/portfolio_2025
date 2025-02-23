@@ -1,3 +1,7 @@
+const freelancerHelsinki2025 = "https://drive.google.com/file/d/1q7Q46SaFS5m5-xBjisTzLaFIB7kioD0N/view?usp=sharing";
+const integrifyCertificate2024 = "https://drive.google.com/file/d/1iEWd5BAdBn7mRDUbrEbCg7tS1brfoKWV/view?usp=sharing";
+const vamkDegree2023 = "https://drive.google.com/file/d/1vsb2bZQ9YWf283lNRNlUDM73LE7j9jv_/view?usp=sharing";
+
 const CVArray = [
   {
     start_year: "9/2018",
@@ -11,7 +15,7 @@ const CVArray = [
     color: "#FF8C00",
     icon: "🎓",
     status: "Completed",
-    certificate: "https://example.com/VAMK_degree.pdf",
+    certificate: vamkDegree2023,
   },
   {
     start_year: "12/2021",
@@ -37,7 +41,6 @@ const CVArray = [
     color: "#2E8B57",
     icon: "💼",
     status: "Completed",
-    certificate: "https://example.com/Internship_certificate.pdf",
   },
   {
     start_year: "8/2023",
@@ -50,7 +53,7 @@ const CVArray = [
     color: "#4169E1",
     icon: "💼",
     status: "Completed",
-    certificate: "https://example.com/Integrify_Trainee.pdf",
+    certificate: integrifyCertificate2024,
   },
   {
     start_year: "11/2024",
@@ -63,7 +66,7 @@ const CVArray = [
     color: "#9B30FF",
     icon: "💼",
     status: "On-going",
-    certificate: "https://example.com/Nghi-le.pdf",
+    certificate: freelancerHelsinki2025,
   },
   {
     start_year: "3/2025",

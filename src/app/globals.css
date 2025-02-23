@@ -12,11 +12,12 @@
 @import "./styles/testimonials.css";
 @import "./styles/about.css";
 @import "./styles/contact.css";
+@import "./styles/certificates.css";
 
 /*.................................................................................*/
 /* This is a CSS  module for the entire body of this app */
 body {
-  @apply overflow-x-hidden;
+  @apply overflow-x-hidden bg-gradient-to-br from-gray-900 via-white/20 to-gray-800;
 }
 /* Increase text size for screens 800px and larger */
 @media (min-width: 800px) {

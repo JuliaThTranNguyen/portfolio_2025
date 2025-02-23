@@ -14,7 +14,7 @@
   }
 
   .app-layout-cross-section-line {
-    @apply mt-10 mb-10 h-0.5 w-full border-t-2 border-dashed border-gray-300;
+    @apply h-0.5 w-full border-t-2 border-dashed border-gray-300;
   }
 
   /* Ensure child containers use the available width */
@@ -27,7 +27,7 @@
   /* This is a CSS  module for  header section */
 
   .header-section {
-    @apply fixed top-6 left-1/2 bg-gray-600 transform -translate-x-1/2 flex justify-center z-50 w-max;
+    @apply fixed top-6 left-1/2 bg-gray-900 rounded-full transform -translate-x-1/2 flex justify-center z-50 w-max;
   }
 
   .header-navbar {

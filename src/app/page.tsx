@@ -1,4 +1,5 @@
 import { AboutSection } from "@/sections/About";
+import CertificatesSection from "@/sections/Certificates";
 import { ContactSection } from "@/sections/Contact";
 import { CVTree } from "@/sections/CVTree";
 import { Footer } from "@/sections/Footer";
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div id="edu&exp">
         <CVTree />
+      </div>
+      <div id="certificates">
+        <CertificatesSection />
       </div>
       <div id="testimonial">
         <TestimonialsSection />
