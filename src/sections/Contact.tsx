@@ -10,7 +10,9 @@ export const ContactSection = () => {
   });
   const [formStatus, setFormStatus] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -26,7 +28,9 @@ export const ContactSection = () => {
       )
       .then(
         () => {
-          setFormStatus("Thank you for reaching out! We'll get back to you soon. 📜");
+          setFormStatus(
+            "Thank you for reaching out! We'll get back to you soon. 📜"
+          );
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
@@ -38,8 +42,8 @@ export const ContactSection = () => {
   return (
     <div className="contact-section  ">
       <div className="contact-banner">
-        <h2 >Connect with me 👋</h2>
-        <p >I would love to hear from you. Feel free to drop a message!</p>
+        <h2>Connect with me 👋</h2>
+        <p>I would love to hear from you. Feel free to drop a message!</p>
       </div>
 
       <div className="contact-bottom-container gap-x-6">
@@ -47,7 +51,7 @@ export const ContactSection = () => {
         <div className="contact-form w-full">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" >Your Name</label>
+              <label htmlFor="name">Your Name</label>
               <input
                 type="text"
                 id="name"
@@ -59,7 +63,7 @@ export const ContactSection = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" >Your Email</label>
+              <label htmlFor="email">Your Email</label>
               <input
                 type="email"
                 id="email"
@@ -71,7 +75,7 @@ export const ContactSection = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" >Your Message</label>
+              <label htmlFor="message">Your Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -90,29 +94,60 @@ export const ContactSection = () => {
               </button>
             </div>
           </form>
-          {formStatus && <p className="mt-4 text-lg text-center text-gray-600">{formStatus}</p>}
+          {formStatus && (
+            <p className="mt-4 text-lg text-center text-gray-600">
+              {formStatus}
+            </p>
+          )}
         </div>
 
         {/* Right Box: Contact Info & Social Links */}
         <div className="contact-info space-y-8">
           <div className="direct-contact">
             <h3>Direct Contact Info ☎️</h3>
-            <p >Email: <a href="mailto:trhien541@gmail.com" className="text-blue-600">trhien541@gmail.com</a></p>
-            <p >Phone: +358 46 546 1269</p>
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:trhien541@gmail.com"
+                className="contact-text-link"
+              >
+                trhien541@gmail.com
+              </a>
+            </p>
+            <p>Phone: +358 46 546 1269</p>
           </div>
 
           <div className="social-links">
-            <h3 >Social Media 🌐 </h3>
+            <h3>Social Media 🌐 </h3>
             <div className="flex gap-4">
-              <a href="https://github.com/yourusername" className="text-blue-600 hover:text-blue-800">GitHub</a>
-              <a href="https://linkedin.com/in/yourusername" className="text-blue-600 hover:text-blue-800">LinkedIn</a>
-              <a href="https://instagram.com/yourusername" className="text-blue-600 hover:text-blue-800">Instagram</a>
+              <a
+                href="https://github.com/JuliaThTranNguyen"
+                className="contact-text-link"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/thuy-hien-tran-nguyen-072464174/"
+                className="contact-text-link"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://www.instagram.com/nguyenthuyhientran/"
+                className="contact-text-link"
+              >
+                Instagram
+              </a>
             </div>
           </div>
 
           <div className="cta text-center">
-            <h3 className="text-xl font-semibold">Ready to Talk? Reach me out now 💫</h3>
-            <p className="text-lg mt-2 text-gray-600">Send me a message, and I will get back to you as soon as possible!</p>
+            <h3 className="text-xl font-semibold">
+              Ready to Talk? Reach me out now 💫
+            </h3>
+            <p className="text-lg mt-2 text-gray-600">
+              Send me a message, and I will get back to you as soon as possible!
+            </p>
           </div>
         </div>
       </div>

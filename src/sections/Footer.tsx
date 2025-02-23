@@ -8,10 +8,13 @@ export const Footer = () => {
         className="max-w-screen-lg mx-auto flex flex-col items-center justify-center text-center
 "
       >
-        {/* Copyright Text */}
-        <p className="text-sm">
-          © {new Date().getFullYear()} Julia Tran. All rights reserved.
-        </p>
+        <a
+          href="https://github.com/JuliaThTranNguyen"
+          className="text-sm hover:text-blue-400"
+        >
+          © {new Date().getFullYear()} - Th.Julia ( Hien Thuy, Tran Nguyen ).
+          All rights reserved.
+        </a>
       </div>
     </footer>
   );

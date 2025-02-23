@@ -9,7 +9,7 @@
 
   /* Primary button (Blue) */
   .button-primary {
-    @apply bg-blue-600 hover:bg-cyan-600 shadow-md hover:shadow-lg transition duration-300;
+    @apply bg-blue-600 hover:bg-cyan-600;
   }
 
   /* Success button (Green) */
