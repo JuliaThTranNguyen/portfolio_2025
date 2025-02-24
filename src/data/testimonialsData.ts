@@ -16,7 +16,7 @@ const testimonialsData = [
   {
     name: "Nghi Le",
     position: "Team Lead @ Freelancer",
-    text: "I am pleased to recommand Thuy HIen TRan Nguyen to you. As a senior software developer with experience ranging from small startups to large corporations like Nordea, Nokia and Siemens, ....",
+    text: "I am pleased to recommand Thuy Hien TRan Nguyen to you. As a senior software developer with experience ranging from small startups to large corporations like Nordea, Nokia and Siemens, ....",
     certificate: freelancerHelsinki2025,
     location: "Helsinki, Finland",
     avatar: memojiAvatar3,
