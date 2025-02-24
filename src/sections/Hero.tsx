@@ -5,6 +5,7 @@ import { useScrollToSection } from "@/app/utils/useScrollToSection";
 
 export const HeroSection = () => {
   const scrollToProjects = useScrollToSection("projects");
+  const scrollToContact = useScrollToSection("contact");
 
   return (
     <div id="hero" className="hero-container twinkling-stars">
@@ -39,7 +40,7 @@ export const HeroSection = () => {
             <span className="font-semibold">Explore My Work ⬇️</span>
           </button>
 
-          <button className="button-base button-success">
+          <button className="button-base button-success" onClick={scrollToContact}>
             <span className="font-semibold">💖</span>
             <span className="font-semibold">Reach out to me !</span>
           </button>
