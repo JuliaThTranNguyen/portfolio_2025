@@ -84,7 +84,7 @@
   /* Default styles for small devices (Mobile) */
   @media (max-width: 971px) {
     .project-card-image {
-      @apply relative w-[0%] h-[70%] max-w-full mx-auto rounded-lg overflow-hidden items-center justify-center;
+      @apply relative w-[70%] h-[70%] mb-10 max-w-full mx-auto rounded-lg overflow-hidden items-center justify-center;
     }
 
     .project-card-image img {
