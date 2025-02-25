@@ -3,6 +3,8 @@
 import HeroMemoJi from "@/assets/images/female-programmer.svg";
 import { useScrollToSection } from "@/app/utils/useScrollToSection";
 
+const myOnlineResume = "https://resume.io/r/Su1pKuFJJ";
+
 export const HeroSection = () => {
   const scrollToProjects = useScrollToSection("projects");
   const scrollToContact = useScrollToSection("contact");
@@ -36,11 +38,26 @@ export const HeroSection = () => {
         </p>
 
         <div className="hero-footer">
-          <button className="button-base button-primary" onClick={scrollToProjects}>
+          <a
+            href={myOnlineResume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-base bg-yellow-600 hover:bg-yellow-700"
+          >
+            <span className="font-semibold">View My CV</span>
+          </a>
+
+          <button
+            className="button-base button-primary"
+            onClick={scrollToProjects}
+          >
             <span className="font-semibold">Explore My Work ⬇️</span>
           </button>
 
-          <button className="button-base button-success" onClick={scrollToContact}>
+          <button
+            className="button-base button-success"
+            onClick={scrollToContact}
+          >
             <span className="font-semibold">💖</span>
             <span className="font-semibold">Reach out to me !</span>
           </button>

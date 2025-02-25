@@ -4,7 +4,7 @@
   /*..........................................................................*
   /* Base styles for all buttons */
   .button-base {
-    @apply my-2 font-serif font-bold inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-white transition;
+    @apply my-2 font-serif font-bold inline-flex items-center gap-2 px-5 py-2.5 z-50 rounded-lg text-white transition;
   }
 
   .button-primary {
@@ -27,13 +27,5 @@
     .button-base {
       @apply text-xl;
     }
-  }
-
-  /*Applying z-index to buttons*/
-  .button-base,
-  .button-circle,
-  .button-primary,
-  .button-success {
-    @apply z-10;
   }
 }
