@@ -1,61 +1,93 @@
 import newPortfolioPage from "@/assets/images/portfolio_page.png";
 import comingSoonPage from "@/assets/images/coming-soon-page.png";
-import saasDrkProjectPage from "@/assets/images/dark-saas-landing-page.png";
-import saasLghtProjectPage from "@/assets/images/light-saas-landing-page.png";
-
-// Define reusable constants
-const placeholderImageURL =
-  "https://cdni.iconscout.com/illustration/premium/thumb/coming-soon-banner-illustration-download-in-svg-png-gif-file-formats--new-logo-advert-miscellaneous-illustrations-3373565.png";
+import javaEcomGithubPage from "@/assets/images/java-ecom-github2025.png";
+import angularEcomFePage from "@/assets/images/ecom-fe-page.png";
 
 const portfolioSourceCode =
   "https://github.com/JuliaThTranNguyen/portfolio_2025";
 
-// Reusable tech stack and deployment info
-const techStack = ["Next.js", "TailwindCSS", "React", "TypeScript"];
-const deploymentInfo = ["Deployed on Vercel", "Code maintained on GitHub"];
+const ecomBeSourceCode =
+  "https://github.com/JuliaThTranNguyen/java-ecom-backend2025";
+const ecomFeSourceCode =
+  "https://github.com/JuliaThTranNguyen/ecom-Fe-Angular-2025";
+
+const portfolioLiveDemo =
+  "https://thjulia-tran-hien-portfolio-2025.vercel.app/";
+const upcomingLiveDemo =
+  "https://i.pinimg.com/736x/79/cd/bd/79cdbd490251e750e5afce048532dec0.jpg";
+
+const portfolioTechStack = ["Next.js", "TailwindCSS", "React", "TypeScript"];
+const portfolioDeploymentInfo = [
+  "Deployed on Vercel",
+  "Code maintained on GitHub",
+];
+
+const ecomBeTechStack = [
+  "Java",
+  "Spring boot",
+  "Spring Securiy",
+  "MySQL",
+  "Stripe API",
+];
+const ecomBeDeploymentInfo = [
+  "Hosted on AWS/Google Cloud",
+  "Code maintained on GitHub",
+  "Payment processing powered by Stripe API",
+];
+
+const ecomFeTechStack = ["Angular 19", "TailwindCSS", "MySQL", "Stripe API"];
+const ecomFeDeploymentInfo = [
+  "Hosted on Vercel",
+  "Code maintained on GitHub",
+  "Safe & secure checkout with Stripe",
+];
 
 const advancedProjects = [
   {
     company: "Personal Project",
-    year: "2025",
+    year: "2/2025",
     title: "Web Portfolio 2025",
     results: [
       "Enhanced user experience by 25%",
       "Improved site speed by 50%",
       "Involved lovely UI/UX Design by 42%",
     ],
-    techs: techStack,
-    mains: deploymentInfo,
-    link: portfolioSourceCode,
+    techs: portfolioTechStack,
+    mains: portfolioDeploymentInfo,
+    demo: portfolioLiveDemo,
+    github: portfolioSourceCode,
     image: newPortfolioPage,
   },
   {
-    company: "Banking landing page",
-    year: "2025",
-    title: "Vaasa Startup Landing Page",
+    company: "Work in Progress: Inventory Management System",
+    year: "11/2024 - 2/2025",
+    title: "Helsinki Freelance: E-Commerce Project",
     results: [
-      "Enhanced user experience by 55%",
+      "Enhanced secure payment by 50%",
       "Improved site speed & data traffic by 25%",
-      "Increased new user awareness by 30%",
+      "Dynamic Product Filters & Search by 40%",
     ],
-    techs: techStack,
-    mains: deploymentInfo,
-    link: placeholderImageURL,
-    image: saasDrkProjectPage,
+    techs: ecomBeTechStack,
+    mains: ecomBeDeploymentInfo,
+    demo: upcomingLiveDemo,
+    github: ecomBeSourceCode,
+    image: javaEcomGithubPage,
   },
   {
-    company: "New landing page",
-    year: "2024",
-    title: "Vaasa Startup Landing Page",
+    company: "Work in Progress: E-Commerce Web App",
+    year: "11/2024 - 2/2025",
+    title: "Helsinki Freelance: E-Commerce Project",
     results: [
       "Enhanced user experience by 40%",
-      "Improved site speed by 30%",
+      "Secure user data & order tracking by 50%",
+      "Improved site speed & data traffic by 25%",
       "Increased new brand awareness by 20%",
     ],
-    techs: techStack,
-    mains: deploymentInfo,
-    link: placeholderImageURL,
-    image: saasLghtProjectPage,
+    techs: ecomFeTechStack,
+    mains: ecomFeDeploymentInfo,
+    demo: upcomingLiveDemo,
+    github: ecomFeSourceCode,
+    image: angularEcomFePage,
   },
   {
     company: "Quantum Dynamics",
@@ -66,9 +98,10 @@ const advancedProjects = [
       "Improved site speed by 50%",
       "Increased mobile traffic by 35%",
     ],
-    techs: techStack,
-    mains: deploymentInfo,
-    link: placeholderImageURL,
+    techs: portfolioTechStack,
+    mains: portfolioDeploymentInfo,
+    demo: upcomingLiveDemo,
+    github: upcomingLiveDemo,
     image: comingSoonPage,
   },
   {
@@ -80,9 +113,10 @@ const advancedProjects = [
       "Expanded customer reach by 35%",
       "Increased brand awareness by 15%",
     ],
-    techs: techStack,
-    mains: deploymentInfo,
-    link: placeholderImageURL,
+    techs: portfolioTechStack,
+    mains: portfolioDeploymentInfo,
+    demo: upcomingLiveDemo,
+    github: upcomingLiveDemo,
     image: comingSoonPage,
   },
 ];

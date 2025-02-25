@@ -70,7 +70,7 @@ export const AdvancedProjectsSection = () => {
 
               <div className="project-button-spacing">
                 <a
-                  href={project.link}
+                  href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button-base button-primary"
@@ -80,18 +80,16 @@ export const AdvancedProjectsSection = () => {
                   </button>
                 </a>
 
-            
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button-base button-success"
-                  >
-                    <button>
-                      <span className="font-semibold">View Source Code 💡</span>
-                    </button>
-                  </a>
-              
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-base button-success"
+                >
+                  <button>
+                    <span className="font-semibold">View Source Code 💡</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
