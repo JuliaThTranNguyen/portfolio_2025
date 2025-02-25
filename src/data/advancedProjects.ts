@@ -6,21 +6,16 @@ import angularEcomFePage from "@/assets/images/ecom-fe-page.png";
 const portfolioSourceCode =
   "https://github.com/JuliaThTranNguyen/portfolio_2025";
 
-const ecomBeSourceCode =
-  "https://github.com/JuliaThTranNguyen/java-ecom-backend2025";
-const ecomFeSourceCode =
-  "https://github.com/JuliaThTranNguyen/ecom-Fe-Angular-2025";
-
-const portfolioLiveDemo =
-  "https://thjulia-tran-hien-portfolio-2025.vercel.app/";
-const upcomingLiveDemo =
-  "https://i.pinimg.com/736x/79/cd/bd/79cdbd490251e750e5afce048532dec0.jpg";
-
 const portfolioTechStack = ["Next.js", "TailwindCSS", "React", "TypeScript"];
 const portfolioDeploymentInfo = [
   "Deployed on Vercel",
   "Code maintained on GitHub",
 ];
+const portfolioLiveDemo =
+  "https://thjulia-tran-hien-portfolio-2025.vercel.app/";
+
+const ecomBeSourceCode =
+  "https://github.com/JuliaThTranNguyen/java-ecom-backend2025";
 
 const ecomBeTechStack = [
   "Java",
@@ -35,12 +30,18 @@ const ecomBeDeploymentInfo = [
   "Payment processing powered by Stripe API",
 ];
 
+const ecomFeSourceCode =
+  "https://github.com/JuliaThTranNguyen/ecom-Fe-Angular-2025";
+
 const ecomFeTechStack = ["Angular 19", "TailwindCSS", "MySQL", "Stripe API"];
 const ecomFeDeploymentInfo = [
   "Hosted on Vercel",
   "Code maintained on GitHub",
   "Safe & secure checkout with Stripe",
 ];
+
+const upcomingLiveDemo =
+  "https://i.pinimg.com/736x/79/cd/bd/79cdbd490251e750e5afce048532dec0.jpg";
 
 const advancedProjects = [
   {
