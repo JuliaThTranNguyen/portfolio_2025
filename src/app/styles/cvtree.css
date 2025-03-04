@@ -3,7 +3,7 @@
 @layer components {
   /* General Styles for the CV Tree Section */
   .cv-tree-section {
-    @apply p-8 mt-10 max-w-3xl mx-auto text-gray-800;
+    @apply p-8 mt-10 max-w-3xl mx-auto text-gray-800 bg-gray-950;
   }
 
   .cv-tree-title {

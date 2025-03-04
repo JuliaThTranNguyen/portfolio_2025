@@ -4,7 +4,7 @@
   /*.............................................................................................*/
   /* This is a CSS  module for hero section */
   .hero-container {
-    @apply flex flex-col items-center justify-center min-h-screen text-white overflow-visible relative;
+    @apply flex flex-col items-center justify-center bg-gray-950 min-h-screen text-white overflow-visible relative;
   }
 
   .hero-inner-container {

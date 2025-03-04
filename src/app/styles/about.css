@@ -6,7 +6,7 @@
 
   /* About Section - Flex layout */
   .about-section {
-    @apply flex flex-col space-y-10;
+    @apply flex flex-col space-y-10 bg-gray-950;
   }
 
   /* Top Container (Banner) */
