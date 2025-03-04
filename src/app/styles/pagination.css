@@ -9,7 +9,7 @@
 
   .pagination-button,
   .pagination-number {
-    @apply bg-gray-500 px-3 py-2 rounded-md text-base cursor-pointer transition;
+    @apply bg-gray-500 px-3 py-2 rounded-md text-xs cursor-pointer transition;
   }
 
   .pagination-button:hover,
