@@ -17,9 +17,7 @@ export const CVTree = () => {
               {item.icon}
             </div>
             <div
-              className="cv-node-line
-            
-            "
+              className="cv-node-line"
               style={{ borderLeftColor: item.color }}
             ></div>
             <div

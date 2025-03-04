@@ -19,6 +19,7 @@
 /* This is a CSS  module for the entire body of this app */
 body {
   @apply overflow-x-hidden bg-gray-950;
+  @apply text-base;
 }
 /* Increase text size for screens 800px and larger */
 @media (min-width: 800px) {
@@ -38,5 +39,22 @@ body {
     @apply text-xl;
   }
 }
+
+@media (max-width: 799px) {
+  body {
+    @apply text-base;
+  }
+  .projects-header h2,
+  .hero-heading {
+    @apply text-3xl font-bold;
+  }
+  .projects-header p,
+  .hero-bio {
+    @apply text-lg;
+  }
+}
+
+
+
 
 /*.................................................................................*/

@@ -7,6 +7,7 @@ import { StaticImageData } from "next/image";
 export interface Project {
   id: number;
   company: string;
+  place: string;
   year: string;
   title: string;
   results: string[];
@@ -37,6 +38,7 @@ const advancedProjects: Project[] = [
     id: 1,
     company: "Personal Project",
     year: "2/2025",
+    place: "Vaasa, Finland",
     title: "Web Portfolio 2025",
     results: [
       "Enhanced user experience by 25%",
@@ -53,6 +55,7 @@ const advancedProjects: Project[] = [
     id: 2,
     company: "Helsinki Freelance",
     year: "11/2024 - 2/2025",
+    place: "Helsinki, Finland",
     title: "E-Commerce Backend",
     results: [
       "Enhanced secure payment by 50%",
@@ -69,6 +72,7 @@ const advancedProjects: Project[] = [
     id: 3,
     company: "Helsinki Freelance",
     year: "11/2024 - 2/2025",
+    place: "Helsinki, Finland",
     title: "E-Commerce Frontend",
     results: [
       "Enhanced UX by 40%",
@@ -85,6 +89,7 @@ const advancedProjects: Project[] = [
     id: 4,
     company: "Quantum Dynamics",
     year: "2023",
+    place: "Vaasa, Finland",
     title: "AI Startup Landing Page",
     results: [
       "Enhanced UX by 40%",

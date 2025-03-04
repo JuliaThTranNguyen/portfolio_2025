@@ -1,42 +1,95 @@
 @tailwind components;
 
 @layer components {
-  /* Carousel Container Styles */
-  .carousel-overlay {
-    @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50;
-    transition: transform 0.3s ease-in-out;
+  /*-----------------------------------------------------------------------------*/
+  /* Project Carousel Cards Layout */
+
+  .project-card {
+    @apply mb-10 bg-gray-950 border border-gray-700 p-6 rounded-2xl shadow-lg transition-all ease-in-out duration-300;
   }
 
-  .carousel-container {
-    @apply bg-gray-900 text-white p-6 rounded-xl relative w-full max-w-6xl;
+  .project-card:hover {
+    @apply border-2 border-blue-500 shadow-xl scale-[1.02];
   }
 
-  .carousel-card {
-    @apply flex justify-start items-start text-left py-4 relative;
+  .carousel-text-h2 {
+    @apply font-bold sm:text-xl md:text-3xl;
   }
 
-  .carousel-card-image {
-    @apply ml-12 m-4 w-[90%] h-[84%] object-cover rounded-lg relative transition-transform duration-300 ease-out;
-    transform: scale(0.95);
+  .carousel-text-h4 {
+    @apply mb-2 font-semibold text-gray-400 sm:text-sm md:text-xl mt-2 underline;
   }
 
-  .carousel-card-content {
-    @apply w-full ml-36 py-6 text-white text-left;
+  .carousel-text-p {
+    @apply md:text-lg sm:text-sm text-gray-500 font-semibold;
   }
 
-  .carousel-navigation {
-    @apply absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4;
+  .project-bottom-box {
+    @apply w-full max-w-full p-6 mt-6 bg-gray-950 border-2 border-gray-800 rounded-2xl shadow-lg text-left;
   }
 
-  .arrow-button {
-    @apply bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full;
+  @media (max-width: 959px) {
+    .project-top-box {
+      @apply flex flex-col justify-start gap-8 text-left;
+    }
+
+    .carousel-navigation {
+      @apply mt-5;
+    }
   }
 
-  .carousel-close-button {
-    @apply absolute top-4 right-4 text-white font-bold text-sm bg-gray-600 p-2 rounded-xl;
-  }
+  @media (min-width: 960px) {
+    .project-card {
+      @apply flex flex-col items-center gap-8 text-left;
 
-  .carousel-overlay:hover .carousel-container {
-    transform: scale(1);
+      @apply w-full max-w-6xl;
+    }
+    .project-top-box {
+      @apply flex flex-row items-center gap-8 text-left m-10;
+    }
+
+    .project-bottom-box {
+      @apply w-full max-w-6xl p-6 mt-6 bg-gray-950 rounded-2xl shadow-lg;
+    }
+
+    .project-card-image {
+      @apply w-[60%] flex justify-center items-center;
+    }
+
+    .project-card-content {
+      @apply w-[52%];
+    }
+
+    .project-bottom-box {
+      @apply w-full max-w-6xl p-6 mt-6 bg-gray-950 rounded-2xl border-4 border-gray-900 shadow-2xl;
+    }
+
+    .carousel-container {
+      @apply text-white p-6 pb-16 rounded-xl relative w-full max-w-6xl;
+    }
+
+    .carousel-card {
+      @apply flex justify-start items-start text-left py-4 ml-24 relative order-2;
+    }
+
+    .carousel-card-content {
+      @apply w-full ml-1 py-6 text-white;
+    }
+
+    .carousel-card-image {
+      @apply m-4 w-[90%] h-[84%] object-cover rounded-lg relative transition-transform duration-300 ease-out;
+    }
+
+    .carousel-navigation {
+      @apply pb-5 absolute bottom-0 left-1/2 transform -translate-x-1/2 flex justify-center gap-2 w-full;
+    }
+
+    .arrow-button {
+      @apply bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full;
+    }
+
+    .carousel-close-button {
+      @apply absolute top-4 right-4 text-white font-bold text-sm bg-gray-600 p-2 rounded-xl;
+    }
   }
 }

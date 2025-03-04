@@ -42,7 +42,7 @@ export const HeroSection = () => {
             href={myOnlineResume}
             target="_blank"
             rel="noopener noreferrer"
-            className="button-base bg-yellow-600 hover:bg-yellow-700"
+            className="button-base bg-purple-600 hover:bg-pink-400"
           >
             <span className="font-semibold">View My CV</span>
           </a>

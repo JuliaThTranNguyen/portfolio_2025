@@ -75,80 +75,9 @@
 
   .project-card {
     @apply mb-10 bg-gray-950 border border-gray-700 p-6 rounded-2xl shadow-lg transition-all ease-in-out duration-300;
-  }  
+  }
 
   .project-card:hover {
     @apply border-2 border-blue-500 shadow-xl scale-[1.02];
-  }
-
-  /* Default styles for small devices (Mobile) */
-  @media (max-width: 971px) {
-    .project-card-image {
-      @apply relative w-[70%] h-[70%] mb-10 max-w-full mx-auto rounded-lg overflow-hidden items-center justify-center;
-    }
-
-    .project-card-image img {
-      @apply object-cover w-[100%] h-[90%];
-    }
-
-    .project-button-spacing {
-      @apply space-x-2;
-    }
-  }
-
-  /* Styles for medium screens (Tablet, etc.) */
-  @media (min-width: 960px) {
-    .projects-section {
-      @apply w-full max-w-full px-32 py-20 flex flex-col items-center text-center;
-    }
-
-    .project-card {
-      @apply flex flex-row items-center gap-8 text-left;
-    }
-
-    .project-card-content {
-      @apply w-[52%];
-    }
-
-    .project-card-image {
-      @apply w-[60%] flex justify-center items-center;
-    }
-
-    .project-card-image img {
-      width: 90%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .project-button-spacing {
-      @apply space-x-0;
-    }
-  }
-
-  /* Adjust button spacing for medium screens (Tablet, etc.) */
-  @media (min-width: 972px) {
-    .project-button-spacing {
-      @apply flex flex-row justify-start items-center space-x-2;
-    }
-  }
-
-  .project-card-content {
-    @apply mt-4 text-white;
-  }
-
-  .project-card-content h3 {
-    @apply text-xl font-semibold;
-  }
-
-  .project-card-content p {
-    @apply text-white/60;
-  }
-
-  .project-card-results {
-    @apply mt-10 mb-2;
-  }
-
-  .project-card-result {
-    @apply text-sm text-white/50;
   }
 }
