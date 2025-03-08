@@ -2,10 +2,15 @@
 
 import HeroMemoJi from "@/assets/images/female-programmer.svg";
 import { useScrollToSection } from "@/app/utils/useScrollToSection";
+import { useState } from "react";
 
 const myOnlineResume = "https://resume.io/r/Su1pKuFJJ";
+const myCoverLetter =
+  "https://drive.google.com/file/d/1Y_3vTNX4Z6guTZNujqnUS9OMPhfahcm1/view?usp=sharing";
 
 export const HeroSection = () => {
+  const [showDocuments, setDocuments] = useState(false);
+
   const scrollToProjects = useScrollToSection("projects");
   const scrollToContact = useScrollToSection("contact");
 
@@ -38,20 +43,47 @@ export const HeroSection = () => {
         </p>
 
         <div className="hero-footer">
-          <a
-            href={myOnlineResume}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
             className="button-base bg-purple-600 hover:bg-pink-400"
+            onClick={() => setDocuments(!showDocuments)}
           >
-            <span className="font-semibold">View My CV</span>
-          </a>
+            View My Documents 🔍
+          </button>
+          {showDocuments && (
+            <div className="hero-drop-down-container">
+              <button
+                className="button-base button-gray hero-drop-down-close-button"
+                onClick={() => setDocuments(!showDocuments)}
+              >
+                ✖
+              </button>
+
+              <div className="flex flex-col gap-2 mt-8 ">
+                <a
+                  href={myCoverLetter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-base button-gray"
+                >
+                  <span className="font-semibold">View My Cover Letter</span>
+                </a>
+                <a
+                  href={myOnlineResume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-base button-gray"
+                >
+                  <span className="font-semibold">View My Online Resume</span>
+                </a>
+              </div>
+            </div>
+          )}
 
           <button
             className="button-base button-primary"
             onClick={scrollToProjects}
           >
-            <span className="font-semibold">Explore My Work ⬇️</span>
+            <span className="font-semibold">Explore My Work ⤵️</span>
           </button>
 
           <button
@@ -59,7 +91,7 @@ export const HeroSection = () => {
             onClick={scrollToContact}
           >
             <span className="font-semibold">💖</span>
-            <span className="font-semibold">Reach out to me !</span>
+            <span className="font-semibold">Reach out to me ☎️</span>
           </button>
         </div>
       </div>

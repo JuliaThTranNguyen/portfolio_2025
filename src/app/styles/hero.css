@@ -62,4 +62,12 @@
   .hero-footer {
     @apply flex flex-col items-center mt-8 gap-4 overflow-visible;
   }
+
+  .hero-drop-down-container {
+    @apply bg-white/20 rounded-lg p-4 shadow-md relative;
+  }
+
+  .hero-drop-down-close-button {
+    @apply z-50 absolute px-2 py-1 right-2 top-2 text-xs;
+  }
 }
