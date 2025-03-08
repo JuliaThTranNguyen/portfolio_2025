@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useScrollToSection } from "@/app/utils/useScrollToSection";
+import Link from "next/link";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,28 +46,49 @@ export const Header = () => {
           >
             Contact
           </button>
+
+          <button className="header-navbar-item hidden">
+            <Link href="/details">Details</Link>
+          </button>
+
+          <button className="header-navbar-item hidden">
+            <Link href="/blogs">Blogs</Link>
+          </button>
         </nav>
       </div>
 
       {/* Mobile Menu Button (Visible on Small Screens) */}
       <div className="mobile-menu md:hidden">
-        <button
-          className="menu-icon"
-          onClick={toggleMenu}
-        >
-          📚 Menu 
+        <button className="menu-icon" onClick={toggleMenu}>
+          📚 Menu
         </button>
 
         {isMenuOpen && (
           <div className="dropdown-menu">
-            <button onClick={closeMenu} className="dropdown-close-item">X</button>
-            <button onClick={scrollToHero} className="dropdown-item mt-4">Home</button>
-            <button onClick={scrollToProjects} className="dropdown-item">Achievements</button>
-            <button onClick={scrollToEdu} className="dropdown-item">Work & Education</button>
-            <button onClick={scrollToCertificates} className="dropdown-item">Certificates</button>
-            <button onClick={scrollToTestimonial} className="dropdown-item">Testimonial</button>
-            <button onClick={scrollToAbout} className="dropdown-item">About</button>
-            <button onClick={scrollToContact} className="dropdown-item">Contact</button>
+            <button onClick={closeMenu} className="dropdown-close-item">
+              X
+            </button>
+            <button onClick={scrollToHero} className="dropdown-item mt-4">
+              Home
+            </button>
+            <button onClick={scrollToProjects} className="dropdown-item">
+              Achievements
+            </button>
+            <button onClick={scrollToEdu} className="dropdown-item">
+              Work & Education
+            </button>
+            <button onClick={scrollToCertificates} className="dropdown-item">
+              Certificates
+            </button>
+            <button onClick={scrollToTestimonial} className="dropdown-item">
+              Testimonial
+            </button>
+            <button onClick={scrollToAbout} className="dropdown-item">
+              About
+            </button>
+            <button onClick={scrollToContact} className="dropdown-item">
+              Contact
+            </button>
           </div>
         )}
       </div>
