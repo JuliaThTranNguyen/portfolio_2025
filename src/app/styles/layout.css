@@ -1,7 +1,7 @@
 @tailwind base;
 
 @layer base {
-  /* Main Layout */
+  /* App Root Layout */
   .app-main-layout {
     @apply bg-gray-950 text-white antialiased min-h-screen flex flex-col items-center justify-center py-5;
     width: 98vw;
@@ -9,70 +9,32 @@
     margin: 0 auto;
   }
 
-  /* Header Section */
-  .header-section {
-    @apply fixed top-6 left-1/2 bg-gray-950 rounded-full transform -translate-x-1/2 flex justify-center z-50 w-max;
-    position: fixed;
-    top: 6px;
-    left: 50%;
-    z-index: 60;
-  }
-
-  .header-navbar {
-    @apply flex gap-1 p-0.5 border border-gray-500 bg-white/20  backdrop-blur rounded-full;
-  }
-
-  .header-navbar-item {
-    @apply px-4 py-1.5 rounded-full text-sm font-semibold  text-white hover:bg-white/20 hover:bg-gray-600 hover:text-white transition duration-300;
-  }
-
   /* Smooth Scrolling */
   html {
     scroll-behavior: smooth;
   }
 
-  /* Mobile Menu */
-  @media (max-width: 799px) {
-    .header-section {
-      display: none;
-    }
+   /* App Secondary Layout */
+  .layout-container {
+    @apply min-h-screen w-full flex flex-col items-center justify-center  bg-gradient-to-b from-gray-600 to-gray-900;
+  }
 
-    .mobile-menu {
-      @apply fixed font-serif font-bold top-4 right-1 z-50 mr-8;
-      z-index: 70;
-    }
+  .layout-header {
+    @apply w-full flex justify-between items-center p-4  bg-gradient-to-b from-gray-900 to-gray-600;
+  }
 
-    /* Menu Icon Hover Effect */
-    .menu-icon {
-      @apply text-sm cursor-pointer text-white transition duration-300 bg-gray-700 px-6 py-2 rounded-full;
-      z-index: 100;
-    }
+  .layout-header-item {
+    @apply rounded-full border border-gray-800 gap-4 px-4 py-2 text-white text-lg font-serif font-bold;
+  }
+  .layout-header-item:hover {
+    @apply bg-gray-800 border-gray-600 border-x-2;
+  }
 
-    .menu-icon:hover {
-      @apply bg-gray-800 text-blue-200;
-    }
+  .layout-content {
+    @apply flex-1 w-full max-w-7xl p-6 bg-white text-black;
+  }
 
-    .dropdown-menu {
-      @apply absolute top-12 right-0  bg-gray-800 border border-gray-700 rounded-lg p-3 shadow-lg flex flex-col gap-2;
-      z-index: 80;
-    }
-
-    /* Dropdown Item Hover Effect */
-    .dropdown-close-item {
-      @apply absolute top-2 right-4 text-sm font-bold cursor-pointer text-white/40;
-      z-index: 90;
-    }
-
-    .dropdown-close-item:hover {
-      @apply text-blue-200 bg-gray-600 px-2 rounded-full transition duration-300;
-    }
-
-    .dropdown-item {
-      @apply text-left text-white px-3 py-2 rounded-md transition duration-300;
-    }
-
-    .dropdown-item:hover {
-      @apply bg-gray-600 text-blue-200;
-    }
+  .layout-footer {
+    @apply w-full  bg-gradient-to-b from-gray-900 to-gray-700 text-white text-center p-4 text-sm italic;
   }
 }

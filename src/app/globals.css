@@ -4,6 +4,7 @@
 
 /* Import all the other CSS files */
 @import "./styles/layout.css";
+@import "./styles/header.css";
 @import "./styles/buttons.css";
 @import "./styles/hero.css";
 @import "./styles/advancedProjects.css";
