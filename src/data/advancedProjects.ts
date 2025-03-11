@@ -2,6 +2,7 @@ import newPortfolioPage from "@/assets/images/portfolio_page.png";
 import comingSoonPage from "@/assets/images/coming-soon-page.png";
 import javaEcomGithubPage from "@/assets/images/java-ecom-github2025.png";
 import angularEcomFePage from "@/assets/images/ecom-fe-page.png";
+import carGalleryPage from "@/assets/images/car-gallery-page.png";
 import { StaticImageData } from "next/image";
 
 export interface Project {
@@ -22,6 +23,7 @@ const TECH_STACKS = {
   portfolio: ["Next.js", "TailwindCSS", "React", "TypeScript"],
   ecomBe: ["Java", "Spring Boot", "Spring Security", "MySQL", "Stripe API"],
   ecomFe: ["Angular 19", "TailwindCSS", "MySQL", "Stripe API"],
+  carFE: ["Next.js 15", "TailwindCSS 3", "Parid API", "TypeScript"],
 };
 
 const DEPLOYMENT_INFO = {
@@ -31,16 +33,19 @@ const DEPLOYMENT_INFO = {
     "Payment processing powered by Stripe API",
   ],
   ecomFe: ["Hosted on Vercel", "Safe & secure checkout with Stripe"],
+  carFE: ["Hosted on Vercel", "Safe & secure checkout with Stripe"],
 };
 
 const advancedProjects: Project[] = [
   {
     id: 1,
     company: "Personal Project",
-    year: "2/2025",
+    year: "1/2025 -2/2025",
     place: "Vaasa, Finland",
     title: "Web Portfolio 2025",
     results: [
+      "This is a personal project.",
+      "All technologies used are drawn from previous work experiences.",
       "Enhanced user experience by 25%",
       "Improved site speed by 50%",
       "Lovely UI/UX Design by 42%",
@@ -53,14 +58,37 @@ const advancedProjects: Project[] = [
   },
   {
     id: 2,
+    company: "Personal project",
+    year: "3/2025 - 4/2025",
+    place: "Vaasa, Finland",
+    title: "Car Gallery",
+    results: [
+      "This is a personal project.",
+      "All technologies used are drawn from previous work experiences.",
+      "Enhanced UX by 40%",
+      "Improved site speed by 50%",
+      "Increased mobile traffic by 35%",
+    ],
+    technologies: TECH_STACKS.carFE,
+    deploymentInfo: DEPLOYMENT_INFO.carFE,
+    liveDemoLink: "https://example.com/ai-startup-demo",
+    sourceCode: "https://github.com/JuliaThTranNguyen/Car_Gallery/tree/master",
+    image: carGalleryPage,
+  },
+  {
+    id: 3,
     company: "Helsinki Freelance",
     year: "11/2024 - 2/2025",
     place: "Helsinki, Finland",
     title: "E-Commerce Backend",
     results: [
+      "This is a personal project.",
+      "This project is inspired by the work process.",
+      "All the technology used is derived from this work.",
       "Enhanced secure payment by 50%",
       "Improved data traffic by 25%",
       "Dynamic Product Filters by 40%",
+      "On debugging by 50%",
     ],
     technologies: TECH_STACKS.ecomBe,
     deploymentInfo: DEPLOYMENT_INFO.ecomBe,
@@ -69,15 +97,19 @@ const advancedProjects: Project[] = [
     image: javaEcomGithubPage,
   },
   {
-    id: 3,
+    id: 4,
     company: "Helsinki Freelance",
     year: "11/2024 - 2/2025",
     place: "Helsinki, Finland",
     title: "E-Commerce Frontend",
     results: [
+      "This is a personal project.",
+      "This project is inspired by the work process.",
+      "All the technology used is derived from this work.",
       "Enhanced UX by 40%",
       "Secure order tracking by 50%",
       "Improved site speed by 25%",
+      "On debugging by 50%",
     ],
     technologies: TECH_STACKS.ecomFe,
     deploymentInfo: DEPLOYMENT_INFO.ecomFe,
@@ -85,23 +117,7 @@ const advancedProjects: Project[] = [
     sourceCode: "https://github.com/JuliaThTranNguyen/ecom-Fe-Angular-2025",
     image: angularEcomFePage,
   },
-  {
-    id: 4,
-    company: "Quantum Dynamics",
-    year: "2023",
-    place: "Vaasa, Finland",
-    title: "AI Startup Landing Page",
-    results: [
-      "Enhanced UX by 40%",
-      "Improved site speed by 50%",
-      "Increased mobile traffic by 35%",
-    ],
-    technologies: TECH_STACKS.portfolio,
-    deploymentInfo: DEPLOYMENT_INFO.portfolio,
-    liveDemoLink: "https://example.com/ai-startup-demo",
-    sourceCode: "https://example.com/ai-startup-code",
-    image: comingSoonPage,
-  },
+
 ];
 
 export default advancedProjects;
