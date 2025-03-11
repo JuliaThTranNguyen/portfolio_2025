@@ -1,4 +1,4 @@
-import { SecondaryLayout } from "../layout";
+import { SecondaryLayout } from "../secondaryLayout";
 
 export default function BlogsPage() {
   return (
