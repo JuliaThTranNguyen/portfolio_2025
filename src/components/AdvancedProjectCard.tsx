@@ -40,6 +40,25 @@ const AdvancedProjectCard = ({
             {project.company} | {project.year}
           </p>
 
+          <div className="flex gap-4 mt-6">
+            <a
+              href={project.liveDemoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-base button-primary"
+            >
+              <button>Live Demo</button>
+            </a>
+            <a
+              href={project.sourceCode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-base button-success"
+            >
+              <button>Source Code</button>
+            </a>
+          </div>
+
           <button
             onClick={toggleDetails}
             className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-cyan-600 transition"
@@ -90,24 +109,6 @@ const AdvancedProjectCard = ({
                         {info}
                       </p>
                     ))}
-                  </div>
-                  <div className="flex gap-4 mt-6">
-                    <a
-                      href={project.liveDemoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="button-base button-primary"
-                    >
-                      <button>View Live Demo</button>
-                    </a>
-                    <a
-                      href={project.sourceCode}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="button-base button-success"
-                    >
-                      <button>View Source Code</button>
-                    </a>
                   </div>
                 </div>
               )}
