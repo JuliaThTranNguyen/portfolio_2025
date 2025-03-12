@@ -40,7 +40,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <div className="contact-section  ">
+    <div className="contact-section  mt-5">
       <div className="contact-banner">
         <h2>Connect with me 👋</h2>
         <p>I would love to hear from you. Feel free to drop a message!</p>

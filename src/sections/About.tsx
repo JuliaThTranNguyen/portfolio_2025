@@ -9,14 +9,12 @@ import userData from "@/data/userData";
 export const AboutSection = () => {
   return (
     <div className="about-section">
-      {/* Top Container - Welcome Section */}
       <div className="about-head-banner">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
           More about me 💝
         </h2>
       </div>
 
-      {/* Bottom Container */}
       <div className="about-bottom-container">
         <div className="about-map-container">
           <Image src={MyLocationMap} alt="Map of my location" />

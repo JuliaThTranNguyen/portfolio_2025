@@ -27,14 +27,14 @@ export const AdvancedProjectsSection = () => {
   };
 
   return (
-    <div id="projects" className="projects-section button-text-effect">
-      <div className="projects-header">
-        <p className="projects-head-title">LIVE DEMO OF MY AWESOME PROJECTS</p>
-        <h2>Featured Projects</h2>
-        <p>Check out my latest projects!</p>
-      </div>
-
-      <div>
+    <div className="advanced-projects-section ">
+      <div className="advanced-projects-border">
+        <div className="projects-header">
+          <p className="projects-head-title">
+            View My Advanced Featured Projects
+          </p>
+          <p>Status: In Progress</p>
+        </div>
         {paginatedData.map((project) => (
           <AdvancedProjectCard
             key={project.id}
@@ -43,14 +43,16 @@ export const AdvancedProjectsSection = () => {
             toggleDetails={() => toggleDetails(project.id)}
           />
         ))}
-      </div>
 
-      <Pagination
-        totalItems={totalItems}
-        itemsPerPage={2}
-        currentPage={currentPage}
-        onPageChange={setCurrentPage}
-      />
+        <div className="advanced-projects-paginator">
+          <Pagination
+            totalItems={totalItems}
+            itemsPerPage={2}
+            currentPage={currentPage}
+            onPageChange={setCurrentPage}
+          />
+        </div>
+      </div>
     </div>
   );
 };

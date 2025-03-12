@@ -8,6 +8,7 @@ export const CVTree = () => {
 
   return (
     <section className="cv-tree-section">
+      <div className="app-layout-cross-section-line"></div>
       <h2 className="cv-tree-title">My Career & Study Timeline</h2>
 
       <div className="cv-tree">
