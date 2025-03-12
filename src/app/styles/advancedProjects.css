@@ -144,14 +144,14 @@
   }
 
   .simple-projects-card-styled-text {
-    @apply bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full;
+    @apply bg-gray-700 text-gray-300 text-xs mt-2 px-3 py-1 rounded-full;
   }
 
   .simple-projects-card-url {
-    @apply flex gap-4 mt-4;
+    @apply flex gap-4 mt-6;
   }
 
   .simple-projects-card-url a {
-    @apply text-blue-600 hover:text-yellow-600 font-semibold transition;
+    @apply bg-white/20 text-blue-400 hover:text-yellow-600 text-sm font-extrabold transition;
   }
 }
