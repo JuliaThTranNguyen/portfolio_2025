@@ -71,7 +71,7 @@ const advancedProjects: Project[] = [
     ],
     technologies: TECH_STACKS.carFE,
     deploymentInfo: DEPLOYMENT_INFO.carFE,
-    liveDemoLink: "https://example.com/ai-startup-demo",
+    liveDemoLink: "https://car-gallery-rho.vercel.app/",
     sourceCode: "https://github.com/JuliaThTranNguyen/Car_Gallery/tree/master",
     image: carGalleryPage,
   },
